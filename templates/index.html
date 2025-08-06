@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ice Cream Revenue Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Ice Cream Revenue Predictor</h2>
+        <form action="/predict" method="POST">
+            <label for="temperature">Enter Temperature (°F):</label>
+            <input type="number" name="temperature" step="0.1" required>
+            <button type="submit">Predict Revenue</button>
+        </form>
+    </div>
+</body>
+</html>
