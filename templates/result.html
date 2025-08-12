@@ -2,13 +2,14 @@
 <html>
 <head>
     <title>Prediction Result</title>
-   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
-        <h2>Prediction Result</h2>
-        <p>For a temperature of <strong>{{ temp }}°F</strong>, the predicted revenue is <strong>{{ revenue }}</strong>.</p>
-        <a href="/">Try Again</a>
+        <h1>Prediction Result</h1>
+        <p><strong>Minutes of Exercise:</strong> {{ minutes }}</p>
+        <p><strong>Predicted Calories Burned:</strong> {{ calories }}</p>
+        <a href="/" class="button">Predict Again</a>
     </div>
 </body>
 </html>

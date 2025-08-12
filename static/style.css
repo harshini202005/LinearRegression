@@ -1,80 +1,52 @@
-/* Reset some default styles */
-* {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fa;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .container {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 500px;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
+    width: 350px;
 }
 
-h2 {
+h1 {
     margin-bottom: 20px;
     color: #333;
 }
 
-form label {
+label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #555;
-}
-
-input[type="number"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    font-size: 16px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
+    margin-bottom: 10px;
     font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #45a049;
+input {
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-p {
-    font-size: 18px;
-    margin: 20px 0;
-}
-
-a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #4CAF50;
+button, .button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
     text-decoration: none;
-    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-a:hover {
-    text-decoration: underline;
+button:hover, .button:hover {
+    background-color: #218838;
 }
